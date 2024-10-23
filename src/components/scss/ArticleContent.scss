@@ -1,0 +1,123 @@
+@use "../../assets/variables.scss" as variables;
+
+.article-content-container {
+  display: flex;
+  flex-direction: column;
+  .article-content {
+    margin-top: -14px;
+
+    .article-header {
+      .article-category-container {
+        display: flex;
+        align-items: center;
+
+        .article-category {
+          //fonts settings
+          font-family: variables.$text-category;
+          line-height: 120%;
+        }
+        svg {
+          fill: variables.$brackets-color;
+        }
+      }
+
+      .article-main-title {
+        //margins
+        margin-top: 10px;
+        //fonts settings
+        font-family: variables.$text-titles;
+        font-size: 38px;
+        line-height: 90%;
+        text-transform: uppercase;
+      }
+      .article-main-description {
+        //margins
+        margin-top: 8px;
+        //fonts settings
+        font-family: variables.$text-primary;
+        font-size: 18px;
+        line-height: 110%;
+        color: variables.$text-description-color;
+      }
+    }
+
+    .article-introduction-content {
+      //margins
+      margin-top: 50px;
+      .introduction-title {
+        //font settings
+        font-family: variables.$text-titles;
+        font-size: 30px;
+        line-height: 90%;
+        text-transform: uppercase;
+      }
+
+      .introduction-description {
+        //margins
+        margin-top: 8px;
+        //fonts settings
+        font-size: 18px;
+        line-height: 110%;
+        color: variables.$text-description-color;
+      }
+    }
+
+    .article-slider {
+      margin: 16px 0;
+    }
+
+    .article-paragraph-content {
+      .paragraph-title {
+        //margins
+        margin-top: 30px;
+        //font settings
+        font-family: variables.$text-titles;
+        font-size: 24px;
+        line-height: 90%;
+        text-transform: uppercase;
+
+        &:first-of-type {
+          margin-top: 0;
+        }
+      }
+
+      .closing-title {
+        //margins
+        margin-top: 50px;
+        //font settings
+        font-family: variables.$text-titles;
+        font-size: 30px;
+        line-height: 90%;
+        text-transform: uppercase;
+      }
+
+      .paragraph-description {
+        //margins
+        margin-top: 8px;
+        //font settigns
+        font-family: variables.$text-primary;
+        font-size: 18px;
+        line-height: 110%;
+        color: variables.$text-description-color;
+      }
+    }
+  }
+
+  .social-icons {
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .article-content-container {
+    .article-content {
+      margin-top: 20px;
+    }
+
+    .social-icons {
+      order: -1;
+      margin-top: -16px;
+      align-self: flex-start;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+.article-top-image {
+  display: flex;
+  flex-direction: column;
+  .article-date {
+    margin-top: 14px;
+    align-self: self-end;
+  }
+
+  img {
+    // max-width: 704px;
+    // max-height: 400px;
+    border-radius: 8px;
+  }
+}
+
+@media (min-width: 768px) {
+  .article-top-image {
+    .article-date {
+      margin-top: 20px;
+    }
+  }
+}
