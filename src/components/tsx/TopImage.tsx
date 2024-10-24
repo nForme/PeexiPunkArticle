@@ -34,10 +34,7 @@ const TopImage = () => {
   return (
     <div className="article-top-image-container">
       <div className="article-top-image">
-        <img
-          src={`${process.env.PUBLIC_URL}/PhotoTop.png`}
-          alt={article.introductionTitle}
-        />
+        <img src="./PhotoTop.png" alt={article.introductionTitle} />
         <time dateTime="2024-04-14" className="article-date">
           {article.date}
         </time>

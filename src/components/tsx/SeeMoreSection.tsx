@@ -8,14 +8,14 @@ const newsList = [
     category: "News",
     title: "Immersive Experience Design: Expert Insights and Techniques",
     date: "14 April 2024",
-    imageUrl: "../../../public/PhotoTop.png",
+    imageUrl: "./PhotoTop.png",
   },
   {
     id: 2,
     category: "News",
     title: "Immersive Experience Design: Expert Insights and Techniques",
     date: "15 April 2024",
-    imageUrl: "../../../public/PhotoTop.png",
+    imageUrl: "./PhotoTop.png",
   },
 ];
 

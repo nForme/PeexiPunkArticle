@@ -1,0 +1,27 @@
+.slider {
+  margin: 16px 0;
+
+  width: 100%;
+  // max-width: 380px;
+
+  position: relative;
+  overflow: hidden;
+  .slider-wrapper {
+    display: flex;
+    transition: transform 0.5s ease;
+    .slide {
+      min-width: 100%;
+      box-sizing: border-box;
+      img {
+        display: block;
+        border-radius: 8px;
+      }
+    }
+  }
+}
+
+@media (min-width: 568px) {
+  .slider {
+    margin: 20px 0;
+  }
+}

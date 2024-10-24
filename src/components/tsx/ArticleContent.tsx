@@ -2,6 +2,7 @@ import "../scss/ArticleContent.scss";
 import RightBracket from "../../ui-kit/RightBracket";
 import LeftBracket from "../../ui-kit/LeftBracket";
 import SocialIcons from "../../ui-kit/SocialIcons";
+import ArticleSlider from "./ArticleSlider";
 
 const articleData = [
   {
@@ -54,8 +55,8 @@ const ArticleContent: React.FC = () => {
           <p className="introduction-description">{article.mainDescription}</p>
         </section>
 
-        <section className="article-slider">
-          <p>slider</p>
+        <section>
+          <ArticleSlider />
         </section>
 
         <section className="article-paragraph-content">

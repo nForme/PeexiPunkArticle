@@ -4,7 +4,7 @@
   .see-more-label {
     //fonts settings
     font-family: variables.$text-titles;
-    font-size: 32px;
+    font-size: 2rem;
     line-height: 110%;
     color: variables.$text-gray-color;
   }
@@ -51,12 +51,11 @@
       padding-top: 20px;
       border-bottom: 1px solid variables.$border-item-color;
       .see-more-header {
+        margin-top: 20px;
         .see-more-category-container {
           display: flex;
           align-items: center;
 
-          //margins
-          margin-top: 20px;
           .see-more-category {
             //fonts settings
             font-family: variables.$text-category;
@@ -69,7 +68,7 @@
           margin-top: 10px;
           //fonts settings
           font-family: variables.$text-titles;
-          font-size: 24px;
+          font-size: 1.5rem;
           line-height: 110%;
           text-transform: uppercase;
         }
@@ -79,9 +78,16 @@
         //margins
         margin: 20px 0;
         //fonts settings
+        font-size: 1rem;
         font-family: variables.$text-primary;
         line-height: 110%;
       }
     }
+  }
+}
+
+@media (min-width: 100px) {
+  .see-more-section {
+    margin-top: 100px;
   }
 }
